@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(100, 100, 255);
+    max-width: 100vw;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.yay {
+    display: none;
+}
+
+#text {
+    min-height: 4rem;
+    font-size: xx-large;
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+    font-a
+}
+
+.leaf {
+    fill: green;
+    animation: draw 3s ease-in-out infinite;
+}
+
+
+.branch {
+    fill: rgb(90, 90, 90);
+}
+
+.petal {
+    fill: rgb(120, 0, 0);
+    animation: draw 3s ease-in-out infinite;
+}
+
+.rose-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rose {
+    padding: 1rem;
+}
+
+.message h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: rgb(255, 200, 255);
+    -webkit-text-stroke: 2px rgb(150, 100, 150);
+}
+
+.yes-no {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.yes-no button {
+    padding: 0.5rem 2rem;
+    font-size: large;
+    border-radius: 0.4rem;
+    color: white;
+    border: 1px solid white;
+}
+
+#yes {
+    background-color: rgb(120, 230, 120);
+}
+
+#no {
+    background-color: rgb(230, 120, 120);
+}
+
+@keyframes draw {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(0.98);
+    }
+
+    75% {
+        transform: scaleX(1.02);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
