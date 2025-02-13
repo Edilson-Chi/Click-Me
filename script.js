@@ -61,11 +61,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             no.style.transform = `translate(calc(${offsetFactorX}vw - ${no.getBoundingClientRect().left}px), calc(${offsetFactorY}vh - ${no.getBoundingClientRect().top}px))`;
             bounding = no.getBoundingClientRect()
         } while ((bounding.top < 0 || bounding.left < 0 || bounding.bottom > (window.innerHeight || document.documentElement.clientHeight) || bounding.right > (window.innerWidth || document.documentElement.clientWidth) || offsetFactorX > 5 || offsetFactorY < 5))
-<<<<<<< HEAD
         scale += 0.9
-=======
-        scale += 1
->>>>>>> 05dbbc19bb20b7e14a9141f3f12c358d72a67ebb
         yes.style.scale = scale
     }
     no.addEventListener('click', () => {
