@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     let offsetFactorX = 40;
     let offsetFactorY = 40;
+    let scale = 1
     no.addEventListener('mouseover', () => {
+        val()
+    })
+    function val() {
         let bounding;
         const valentineBegs = [
             "I promise to bring you snacks whenever you want! 🍫",
@@ -57,9 +61,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
             no.style.transform = `translate(calc(${offsetFactorX}vw - ${no.getBoundingClientRect().left}px), calc(${offsetFactorY}vh - ${no.getBoundingClientRect().top}px))`;
             bounding = no.getBoundingClientRect()
         } while ((bounding.top < 0 || bounding.left < 0 || bounding.bottom > (window.innerHeight || document.documentElement.clientHeight) || bounding.right > (window.innerWidth || document.documentElement.clientWidth) || offsetFactorX > 5 || offsetFactorY < 5))
-    })
+        scale += 0.4
+        yes.style.scale = scale
+    }
     no.addEventListener('click', () => {
-        text.innerText = "Nice Try! Not good enough."
+        val()
     })
     yes.addEventListener('click', () => {
         rose.style.display = "none";
