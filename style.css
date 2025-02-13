@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    margin-left: 1px;
+    margin-left: 3px;
 }
 
 .yay {
